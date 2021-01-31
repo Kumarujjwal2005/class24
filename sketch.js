@@ -10,17 +10,24 @@ function preload()
 }
 
 function setup() {
-	createCanvas(800, 700);
+	createCanvas(1000, 600);
 
 
 	engine = Engine.create();
 	world = engine.world;
 
-	//Create the Bodies Here.
+	//Create the Bodies Here
 
 
 	Engine.run(engine);
   
+	var option={
+		isStatic:false,
+		restitution:0.3,
+		friction:0.5,
+		density:1.2
+		
+	}
 }
 
 
